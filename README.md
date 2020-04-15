@@ -1,14 +1,14 @@
 # CS402_SP_LAB1_Muhao-Chen
 A database of employee, finished by C program.
-##### File Name #####
+## File Name ##
 Employee Information Management System
-##### Designer #####
+## Designer #####
 cs402_SP_LAB1_Muhao Chen
-##### Path #####
+## Path #####
 C,VScode,mingw64
-##### Introduction #####
+## Introduction #####
 I use 4 functions to manage the Employee Information. It can read(using readfile.h) the txt file and store into the struct-person. Then, we can get the detail by "circulate" the list. we can get the information of id by binary search(we have ordered the info by qsort_function). Then, we can search the person by last name. Besides, we can add a employee by scanf(using readfile.h), and the new one also be sorted by qsort_function.
-##### Operate #####
+## Operate #####
 # 1.Prepare a file(.txt)on the path of the C program:
 Example:
 "165417 Cathryn Danner 72000
@@ -30,11 +30,9 @@ DB of Employee:
 [5]Quit
 *************************
 Enter Your Option:
-##### Function #####
+## Function #####
 Show DataBase
-------------------------------------------
 Name                       Salary    ID
-------------------------------------------
 Cathryn    Danner          72000     165417
 Matt       Meeden          69000     273225
 Robert     Dufour          91000     471163
@@ -49,17 +47,14 @@ Ann        Coddington      82000     786785
 Melissa    Dufour         114000     849387
 Heather    James           98000     935460
 Russ       Vorobiev       109000     970016
-------------------------------------------
 Look_up by ID
 *************************
 Enter Your Option:
 2
 enter a 6-digit employee id: 
 499959
-------------------------------------------
 Name                       Salary    ID
 Mike       Griffin         72000     499959
-------------------------------------------
 *************************
 Look_up by Last Name
 *************************
@@ -67,10 +62,8 @@ Enter Your Option:
 3
 enter employee's last_name: 
 Dufour
-------------------------------------------
 Name                       Salary    ID
 Robert     Dufour          91000     471163
-------------------------------------------
 *************************
 Add an Employee's info 
 *************************
@@ -87,7 +80,5 @@ enter employee's salary:
 Confirm the info of this employee 
 choose(1foryes/0forno)
 1
-------------------------------------------
 Name                       Salary    ID
-------------------------------------------
 CHEN       MUHAO           40000        333
