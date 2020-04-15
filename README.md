@@ -31,7 +31,7 @@ DB of Employee:
 *************************
 Enter Your Option:
 ##### Function #####
-[1]Show DataBase
+Show DataBase
 ------------------------------------------
 Name                       Salary    ID
 ------------------------------------------
@@ -50,7 +50,7 @@ Melissa    Dufour         114000     849387
 Heather    James           98000     935460
 Russ       Vorobiev       109000     970016
 ------------------------------------------
-[2]Look_up by ID
+Look_up by ID
 *************************
 Enter Your Option:
 2
@@ -61,7 +61,7 @@ Name                       Salary    ID
 Mike       Griffin         72000     499959
 ------------------------------------------
 *************************
-[3]Look_up by Last Name
+Look_up by Last Name
 *************************
 Enter Your Option:
 3
@@ -72,7 +72,7 @@ Name                       Salary    ID
 Robert     Dufour          91000     471163
 ------------------------------------------
 *************************
-[4]Add an Employee's info 
+Add an Employee's info 
 *************************
 Enter Your Option:
 4
