@@ -1,7 +1,7 @@
 #define RANGE_NAME 64
 #define RANGE_EMP 1024
 
-struct person {
+struct person {//define a struct
 	char name[RANGE_NAME], last_name[RANGE_NAME];
 	int id, salary;
 };
@@ -13,7 +13,7 @@ int open_file(char *file_name) {
 }
 
 int ID_cpmpare (const void *a, const void *b)
-{
+{//to set the order, exchange the big and small one
         struct person *c = (struct person*) a;
         struct person *d = (struct person*) b;
         return c->id - d->id;
@@ -41,7 +41,7 @@ void close_file(FILE *file_name) {
 	fclose(file_name);
 }
 
-void Key_tostring(struct person employee[RANGE_NAME], int key){
+void Key_tostring(struct person employee[RANGE_NAME], int key){//set a way to print, can be used more times
 	printf("------------------------------------------\n");
 	printf("Name                       Salary    ID \n");
     printf("%-10s %-10s %10d %10d\n", employee[key].name, employee[key].last_name, employee[key].salary, employee[key].id);
@@ -49,7 +49,7 @@ void Key_tostring(struct person employee[RANGE_NAME], int key){
 }
 
 
-int binary_search(const int arr[],int l, int r, int x){
+int binary_search(const int arr[],int l, int r, int x){//use binary_search
     if(r >=l ){
         int mid = l + (r - l)/2;
         // Find the mid_element and judge
