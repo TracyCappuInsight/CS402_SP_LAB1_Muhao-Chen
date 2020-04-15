@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 	char *file_name = argv[1], name[RANGE_NAME], last_name[RANGE_NAME];
-	struct person employee[RANGE_NAME];
+	struct person employee[RANGE_EMP];
 	int option, employ_id, key, salary, confirm;
 	int n_emp = 0, list[RANGE_EMP];
 	if (open_file(file_name) == -1) {
