@@ -48,9 +48,8 @@ void Key_tostring(struct person employee[RANGE_NAME], int key){//set a way to pr
     printf("------------------------------------------\n");
 }
 
-
-int binary_search(const int arr[],int l, int r, int x){//use binary_search
-    if(r >=l ){
+int binary_search(const int arr[],int l, int r, int x){
+    if(r >= l ){
         int mid = l + (r - l)/2;
         // Find the mid_element and judge
         if(arr[mid] == x)
@@ -70,4 +69,22 @@ int Last_name(struct person employee[RANGE_NAME],int n_empy,char last_name[]){
         }
     }
     return -1;
+}
+
+int Top_salary_num(struct person employee[RANGE_NAME],int n_emp){
+	int Toppest = 0;
+	for(int i=1; i<n_emp;i++){
+		if (employee[i].salary > employee[Toppest].salary){
+			Toppest = i ;
+		}
+	}
+	return Toppest;
+}
+
+void delet_(int key,struct person employee[RANGE_NAME],int n_emp){
+	for (int i = 0; i < n_emp-1; i++){
+		if (i >= key){
+			employee[i] = employee[i + 1];
+		}
+	}
 }
